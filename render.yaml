@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: zeerostock-search-api
+    runtime: node
+    rootDir: inventory-search-project/backend
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+
+  - type: web
+    name: zeerostock-inventory-api
+    runtime: node
+    rootDir: inventory-database-project
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+
+  - type: web
+    name: zeerostock-frontend
+    runtime: static
+    rootDir: inventory-search-project/frontend
+    buildCommand: ""
+    staticPublishPath: .
+    plan: free
