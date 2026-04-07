@@ -2,7 +2,7 @@ const API_BASE_URL =
   window.localStorage.getItem("API_BASE_URL") ||
   (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
     ? "http://localhost:4000"
-    : "https://zeerostock-search-api.onrender.com");
+    : "https://zeerostock-12.onrender.com");
 
 const form = document.getElementById("search-form");
 const messageEl = document.getElementById("message");
