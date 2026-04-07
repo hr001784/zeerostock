@@ -8,6 +8,13 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (_req, res) => {
+  res.json({
+    message: "Inventory Search API is running",
+    endpoints: ["/health", "/categories", "/search"]
+  });
+});
+
 app.get("/health", (_req, res) => {
   res.json({ ok: true });
 });
