@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Search</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <main class="container">
+      <header class="hero">
+        <h1>Inventory Search</h1>
+        <span class="hero-pill">Smart Filters</span>
+        <p class="subtitle">Find surplus products by name, category, and price range.</p>
+      </header>
+
+      <form id="search-form" class="filters">
+        <input id="q" type="text" placeholder="Search product name..." />
+
+        <select id="category"></select>
+
+        <input id="minPrice" type="number" min="0" step="0.01" placeholder="Min price" />
+        <input id="maxPrice" type="number" min="0" step="0.01" placeholder="Max price" />
+
+        <select id="sortBy">
+          <option value="">Sort: default</option>
+          <option value="price_asc">Price: Low to High</option>
+          <option value="price_desc">Price: High to Low</option>
+          <option value="name_asc">Name: A to Z</option>
+          <option value="name_desc">Name: Z to A</option>
+        </select>
+
+        <button type="submit">Search</button>
+        <button type="button" id="clear-btn" class="ghost-btn">Clear</button>
+      </form>
+
+      <section class="summary-grid">
+        <article class="summary-card">
+          <p class="summary-label">Total Results</p>
+          <p id="total-results" class="summary-value">0</p>
+        </article>
+        <article class="summary-card">
+          <p class="summary-label">Price Range in Results</p>
+          <p id="price-range" class="summary-value">-</p>
+        </article>
+      </section>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <label for="pageSize">Rows per page:</label>
+          <select id="pageSize">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+        <div class="view-switch">
+          <button id="table-view-btn" type="button" class="active">Table View</button>
+          <button id="card-view-btn" type="button">Card View</button>
+        </div>
+      </div>
+
+      <p id="message" class="message"></p>
+
+      <div class="table-wrap">
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Supplier</th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+      <section id="cards-grid" class="cards-grid hidden"></section>
+
+      <div class="pagination">
+        <button id="prev-page" type="button">Previous</button>
+        <span id="page-info">Page 1 of 1</span>
+        <button id="next-page" type="button">Next</button>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

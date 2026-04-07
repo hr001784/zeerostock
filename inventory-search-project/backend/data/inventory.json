@@ -1,0 +1,22 @@
+[
+  { "id": 1, "productName": "Office Chair", "category": "Furniture", "price": 120, "supplier": "ABC Traders" },
+  { "id": 2, "productName": "Ergonomic Desk", "category": "Furniture", "price": 320, "supplier": "SpaceWorks" },
+  { "id": 3, "productName": "Gaming Mouse", "category": "Electronics", "price": 45, "supplier": "TechNova" },
+  { "id": 4, "productName": "Wireless Keyboard", "category": "Electronics", "price": 60, "supplier": "TechNova" },
+  { "id": 5, "productName": "A4 Paper Ream", "category": "Stationery", "price": 8, "supplier": "PaperHub" },
+  { "id": 6, "productName": "Whiteboard Marker Set", "category": "Stationery", "price": 15, "supplier": "PaperHub" },
+  { "id": 7, "productName": "Warehouse Pallet", "category": "Logistics", "price": 25, "supplier": "MoveMax" },
+  { "id": 8, "productName": "Barcode Scanner", "category": "Electronics", "price": 95, "supplier": "ScanRight" },
+  { "id": 9, "productName": "Metal Filing Cabinet", "category": "Furniture", "price": 210, "supplier": "ABC Traders" },
+  { "id": 10, "productName": "Packing Tape Roll", "category": "Logistics", "price": 5, "supplier": "MoveMax" },
+  { "id": 11, "productName": "Desk Lamp", "category": "Electronics", "price": 35, "supplier": "LightLine" },
+  { "id": 12, "productName": "Conference Table", "category": "Furniture", "price": 480, "supplier": "SpaceWorks" },
+  { "id": 13, "productName": "Industrial Shelving Rack", "category": "Logistics", "price": 180, "supplier": "MoveMax" },
+  { "id": 14, "productName": "Thermal Receipt Printer", "category": "Electronics", "price": 140, "supplier": "ScanRight" },
+  { "id": 15, "productName": "Notebook Bundle", "category": "Stationery", "price": 12, "supplier": "PaperHub" },
+  { "id": 16, "productName": "Standing Desk", "category": "Furniture", "price": 420, "supplier": "SpaceWorks" },
+  { "id": 17, "productName": "USB-C Docking Station", "category": "Electronics", "price": 155, "supplier": "TechNova" },
+  { "id": 18, "productName": "Bubble Wrap Pack", "category": "Logistics", "price": 18, "supplier": "MoveMax" },
+  { "id": 19, "productName": "Executive Chair", "category": "Furniture", "price": 260, "supplier": "ABC Traders" },
+  { "id": 20, "productName": "Label Stickers", "category": "Stationery", "price": 7, "supplier": "PaperHub" }
+]
